@@ -1,14 +1,28 @@
 body {
+  margin-top: 65px;
+  margin-bottom: 65px;
   background-color: #ccfff2;
+  background-image: url("img/Parchment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #003325;
+  text-align: center;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -65px;
 }
 h1 {
   text-align: center;
 }
 h2 {
-    text-align: center;
-  }
+  text-align: center;
+}
 .icons {
   text-align: center;
   font-size: 100px;
+}
+#calander {
+  text-align: center;
 }
