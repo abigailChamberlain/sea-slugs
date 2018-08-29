@@ -5,7 +5,7 @@ body {
   background-image: url("img/parchment.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #003325;
+  color: #1B2021;
   text-align: center;
   font-family: "Merienda", cursive;
 }
@@ -15,18 +15,29 @@ a.anchor {
   top: -65px;
 }
 .slug-navbar {
-  background-color: #ffebcc;
+  background-color: #51513D;
 }
 .navbar-brand {
   font-family: 'La Belle Aurore', cursive;
+  font-weight: 800;
 } 
-
+.video {
+  width: 560px;
+  height: 315px;
+  text-align: center;
+  box-shadow: 15px 18px 6px 2px rgba(0,0,0,0.19), 12px 14px 2px rgba(0,0,0,0.23);
+}
+  
+hr {
+  font-weight: 200;
+}
 h1 {
   text-align: center;
 }
 h2 {
   text-align: center;
   font-family: 'La Belle Aurore', cursive;
+  font-weight: 600;
 }
 .icons {
   text-align: center;
@@ -52,14 +63,24 @@ h2 {
   padding-right: 120px;
   padding-bottom: 50px;
   padding-left: 120px;
+  text-align: center;
 }
 .small-box {
   padding-top: 15px;
   padding-right: 10px;
   padding-bottom: 15px;
   padding-left: 10px;
+  text-align: center;
 }
-
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  box-shadow: 15px 18px 6px 2px rgba(0,0,0,0.19), 12px 14px 2px rgba(0,0,0,0.23);
+  text-align: center;
+  margin: auto;
+}
 @media (max-width: 768px) {
   .box{
     padding-top: 15px;
@@ -89,5 +110,23 @@ h2 {
   #old-map {
     width: 300px;
     height: 300px;
+  }
+}
+@media (max-width: 610px) {
+  .video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+}
+@media (min-width: 611px) {
+  .video-wrapper {
+    padding: 0px;
+    width: 560px;
+    height: 315px;
+    position: relative;
+    text-align: center;
   }
 }
